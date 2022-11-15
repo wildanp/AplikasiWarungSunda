@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APLIKASI WARUNG SUNDA</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo-192.png">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+    <link rel="manifest" href="manifest.json">
+
+    <style>
+        .container {
+            max-width: 500px;
+            text-align: center !important;
+        }
+        .input-form {
+            padding: 5px;
+            margin: 5px;
+            display: block !important;
+        }
+        #display-table {
+            min-width: 800px !important;
+            margin-top: 20px !important;
+            border-collapse: collapse;
+        }
+        #display-table > thead > tr > td, #display-table > thead > tr > th,
+        #display-table > tbody > tr > td, #display-table > tbody > tr > th {
+            width: auto;
+            border: 1px solid black;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content-order">
+
+        <h1 class="text-center text-dark">APLIKASI WARUNG SUNDA</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5>Input Menu</h5>
+
+                <table>
+                    <tr>
+                        <td>Menu</td>
+                        <td>:</td>
+                        <td>
+                            <select class="form-control" id="input-menu">
+                                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah</td>
+                        <td>:</td>
+                        <td><input class="form-control" type="number" id="input-jumlah" value="1"></td>
+                    </tr>
+                </table>
+                <button class="btn btn-custom" type="button" onclick="addBarang()">Tambah</button>
+            </div>
+        </div>
+
+        <h5 class="text-center" id="alert"></h5>
+
+        <div id="list-barang">
+            
+        </div>
+
+        <div id="footer">
+            <div class="f-bold border-slice pt-2 pb-2 pl-3 pr-3">
+                <span>Total</span>
+                <span class="float-right" id="grandtotal">Rp 0</span>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/register.js"></script>
+</body>
+</html>

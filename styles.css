@@ -1,0 +1,251 @@
+body {
+    overscroll-behavior-y: contain;
+    background-color:#ddbcaf;
+    /* font-family: 'Saira Condensed', sans-serif !important; */
+}
+
+.btn-custom {
+    color: rgb(255, 255, 255);
+    background-color: #414020;
+}
+
+.other-font {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+#content, #content-order {
+    max-width: 500px;
+    margin: auto;
+}
+
+#content {
+    background-color: #b10b87;
+}
+
+.navbar {
+    margin: auto;
+    max-width: 500px;
+    background-color: rgb(180, 21, 21);
+    border-bottom: 1px solid #0f70d1;
+}
+
+#jumbotron {
+    margin-top: 50px;
+    background-image: url('../images/bg-jumbotron.png');
+}
+
+#jumbotron-text {
+    height: 30vh;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;
+}
+
+.card-img-top {
+    max-width: 200px;
+}
+
+.card-img-top.order {
+    max-width: 90px !important;
+}
+
+.card-img-top.order-list {
+    max-width: 50px !important;
+}
+
+.mw-150 {
+    min-width: 125px;
+}
+
+.f-bold {
+    font-weight: bold !important;
+}
+
+.border-slice {
+    border-bottom: 6px solid var(--N50, #F3F4F5);
+}
+
+#alert {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin: 0;
+    background-color: #F3F4F5;
+    min-height: 6px !important;
+}
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 180px;
+    margin: 0 10px 0 10px;
+    border-radius: 0.25rem;
+    background: #fff;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    border: 1px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 100%;
+}
+
+.slides > div.order {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 120px !important;
+}
+
+#footer {
+    background-color: #FFF;
+    max-width: 500px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+.btn-rounded {
+    color: #1B3265;
+    border-radius: 5rem !important;
+}
+
+.form-control:focus, .btn-outline-gray {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.btn-outline-gray:focus {
+    background-color: #DDD;
+    box-shadow: none;
+}
+
+.nav-order, .card.order {
+    background-color: #1B3265;
+    color: #FFF;
+}
+
+.card.order:hover, .card.order:focus, .card.order.active {
+    cursor: pointer;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.3);
+    transition-duration: 0.2s;
+    transform: translateY(-3px);
+}
+
+.back {
+    cursor: pointer;
+}
+
+.form-control#search {
+    text-align: center;
+    border-radius: 1rem !important;
+}
+
+.input-left {
+    padding-left: 3px;
+    color: #1B3265;
+    padding: 0.25rem 0.5rem 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: bold !important;
+    line-height: 1.5;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-left: 1px solid #ced4da;
+}
+
+.input-left > svg {
+    margin-top: -3px !important;
+}
+
+.input-left:hover {
+    cursor: pointer;
+}
+
+.input-right {
+    padding-right: 3px;
+    color: #1B3265;
+    padding: 0.25rem 0.75rem 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold !important;
+    line-height: 1.5;
+    border-top: 1px solid #ced4da;
+    border-bottom: 1px solid #ced4da;
+    border-right: 1px solid #ced4da;
+}
+
+.form-num {
+    color: #1B3265;
+    text-align: center;
+    max-width: 30px !important;
+    border-top: 1px solid #ced4da !important;
+    border-bottom: 1px solid #ced4da !important;
+    border-left: none !important;
+    border-right: none !important;
+}
+.form-num:focus-visible {
+    outline: none !important;
+}
+
+.input-right > svg {
+    margin-top: -3px !important;
+}
+
+.input-right:hover {
+    cursor: pointer;
+}
+
+.pill-num {
+    zoom: 70%;
+}
+
+@media (min-width: 992px) {
+    .bar-list {
+        display: none !important;
+    }
+}
+
+.div-total {
+    background-color: #FFF;
+    position: sticky;
+    bottom: 0;
+}
+
+.bi.bi-trash {
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.type {
+    font-size: 12px;
+    vertical-align: bottom;
+}
